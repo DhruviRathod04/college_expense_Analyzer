@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #081b33;
+    color: #ffffff;
+}
+
+header {
+    background-color: #0a2540;
+    padding: 20px;
+    text-align: center;
+}
+
+header button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    background-color: #102c4c;
+    padding: 15px;
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card {
+    background-color: #102c4c;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1abc9c;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0a2540;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Light Mode */
+.light {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.light .card,
+.light .box {
+    background-color: white;
+    color: black;
+}

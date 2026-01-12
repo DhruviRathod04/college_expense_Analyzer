@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+    <header>
+        <h1>🎓 College Expense Tracker</h1>
+        <button onclick="toggleMode()">🌗 Toggle Mode</button>
+    </header>
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+        <div class="box">🔥 Streak: <span id="streak">0</span> days</div>
+        <div class="box">⭐ Points: <span id="points">0</span></div>
+        <div class="box">💰 Weekly Spend: ₹<span id="weekly">0</span></div>
+    </section>
+
+    <!-- Budget -->
+    <section class="card">
+        <h2>Set Food Budget (Weekly)</h2>
+        <input type="number" id="budget" placeholder="Enter budget">
+        <button onclick="setBudget()">Set Budget</button>
+    </section>
+
+    <!-- Add Expense -->
+    <section class="card">
+        <h2>Add Daily Expense</h2>
+        <input type="text" id="name" placeholder="Expense name">
+        <input type="number" id="amount" placeholder="Amount (₹)">
+        <button onclick="addExpense()">Add Expense</button>
+    </section>
+
+    <!-- Messages -->
+    <section class="card message" id="message">
+        Start tracking to build streaks 🚀
+    </section>
+
+    <!-- Weekly Analysis -->
+    <section class="card">
+        <h2>Weekly Analysis</h2>
+        <ul id="analysis"></ul>
+    </section>
+
+    <footer>
+        <p>Gamified Expense Tracker | Mini Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
